@@ -1,0 +1,35 @@
+{
+  "name": "pre-commit",
+  "version": "1.0.0",
+  "description": "pre-commit husky",
+  "main": "test.js",
+  "scripts": {
+    "fix": "standard test.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "standard --verbose | snazzy"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauseen/pre-commit.git"
+  },
+  "keywords": [
+    "pre-commit",
+    "husky",
+    "eslint",
+    "standard"
+  ],
+  "author": "gauseen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gauseen/pre-commit/issues"
+  },
+  "homepage": "https://github.com/gauseen/pre-commit#readme",
+  "devDependencies": {
+    "husky": "^0.15.0-rc.8",
+    "snazzy": "^7.1.1",
+    "standard": "^11.0.0"
+  }
+}
