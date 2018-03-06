@@ -4,11 +4,11 @@
   "description": "pre-commit husky",
   "main": "test.js",
   "scripts": {
-    "fix": "standard test.js"
+    
   },
   "husky": {
     "hooks": {
-      "pre-commit": "standard --verbose | snazzy"
+      "pre-commit": "standard \"src/**/*.{js, vue, wpy}\" | snazzy"
     }
   },
   "repository": {
